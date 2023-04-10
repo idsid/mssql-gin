@@ -16,7 +16,7 @@ func main() {
 
 	// CORS Configuration
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3001"},
+		AllowOrigins:     []string{"https://94.237.79.44"},
 		AllowMethods:     []string{"GET", "POST"},
 		AllowHeaders:     []string{"Origin"},
 		ExposeHeaders:    []string{"Content-Length"},
@@ -24,8 +24,7 @@ func main() {
 		MaxAge:           12 * time.Hour,
 	}))
 
-	r.GET("/products", controllers.GetProducts)
-	r.POST("/product", controllers.CreateProduct)
+	r.GET("/purchaseTop10", controllers.GetTop10Purchases)
 
 	r.Run()
 }

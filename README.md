@@ -16,3 +16,4 @@ Brief example of RESTful API MS SQL Server with Go and Gin Framework
 📦 Dependencies
 - Gin
 - GORM
+# wbb-be
